@@ -1,0 +1,238 @@
+{
+  "chat": [
+    {
+      "id": "1",
+      "chatRoom_id": 1,
+      "title": 123,
+      "created_at": "2024-04-09"
+    },
+    {
+      "id": "2",
+      "chatRoom_id": 2,
+      "title": 456,
+      "created_at": "2024-04-10"
+    }
+  ],
+  "chatRoom": [
+    {
+      "id": "1",
+      "created_date": "2024-04-09",
+      "end_date": null,
+      "topic": 789,
+      "active": true
+    },
+    {
+      "id": "2",
+      "created_date": "2024-04-10",
+      "end_date": null,
+      "topic": 101112,
+      "active": true
+    }
+  ],
+  "commission": [
+    {
+      "id": "1",
+      "amount": 100,
+      "content": "Lorem ipsum",
+      "get_date": "2024-04-09",
+      "rewards_id": 1
+    },
+    {
+      "id": "2",
+      "amount": 200,
+      "content": "Dolor sit amet",
+      "get_date": "2024-04-10",
+      "rewards_id": 2
+    }
+  ],
+  "message": [
+    {
+      "id": "1",
+      "content": "Hello!",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "2",
+      "content": "Hi there!",
+      "chat_id": 2,
+      "isRead": false,
+      "isSend": true
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "reader_id": 1,
+      "create_at": "2024-04-09",
+      "title": "Portfolio 1",
+      "description": "Description 1",
+      "quantity": 10
+    },
+    {
+      "id": "2",
+      "reader_id": 2,
+      "create_at": "2024-04-10",
+      "title": "Portfolio 2",
+      "description": "Description 2",
+      "quantity": 20
+    }
+  ],
+  "reader": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "username": "johndoe",
+      "email": "john@example.com",
+      "password": "password1",
+      "type": "type1",
+      "suscription_id": 1
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "email": "jane@example.com",
+      "password": "password2",
+      "type": "type2",
+      "suscription_id": 2
+    },
+    {
+      "id": "1801",
+      "email": "gustavo@123.com",
+      "password": "123456",
+      "username": "gustavohc",
+      "artist": false
+    },
+    {
+      "id": "20",
+      "name": "Flor M. Salvador",
+      "email": "florsalvador@gmail.com",
+      "password": "123456",
+      "username": "flor_salvador01",
+      "type": "writer",
+      "imgURL": "../src/assets/images/flor-profile.png",
+      "subscription_id": 1
+    },
+    {
+      "id": "21",
+      "name": "Miriam Bonastre",
+      "email": "miriam_bonastre@gmail.com",
+      "password": "123456",
+      "username": "miriam_01",
+      "type": "illustrator",
+      "imgURL": "../src/assets/images/miriam.png",
+      "subscription_id": 1
+    },
+    {
+      "id": "1",
+      "name": "Laila Lopez",
+      "imgUrl": "https://raw.githubusercontent.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/bounded-context/user/frontend/src/assets/images/lala-lopez.png"
+    },
+    {
+      "id": "2",
+      "name": "Hola",
+      "imgUrl": "https://raw.githubusercontent.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/bounded-context/user/frontend/src/assets/images/lala-lopez.png"
+    }
+  ],
+  "reward": [
+    {
+      "id": "1",
+      "type": 1,
+      "amount": 50,
+      "reader_id": 1
+    },
+    {
+      "id": "2",
+      "type": 2,
+      "amount": 100,
+      "reader_id": 2
+    }
+  ],
+  "suscription": [
+    {
+      "flag": true,
+      "id": "1",
+      "type": "Type A"
+    },
+    {
+      "flag": true,
+      "id": "2",
+      "type": "Type B"
+    }
+  ],
+  "template": [
+    {
+      "title": "Template 1",
+      "description": "Description 1",
+      "date_publish": "2024-04-09",
+      "type": "Type A",
+      "templateState_id": 1,
+      "template_History_id": 1,
+      "id": "1",
+      "portfolio_id": 1
+    },
+    {
+      "title": "Template 2",
+      "description": "Description 2",
+      "date_publish": "2024-04-10",
+      "type": "Type B",
+      "templateState_id": 2,
+      "template_History_id": 2,
+      "id": "2",
+      "portfolio_id": 2
+    }
+  ],
+  "templateState": [
+    {
+      "id": "1",
+      "flag": true
+    },
+    {
+      "id": "2",
+      "flag": false
+    }
+  ],
+  "template_History": [
+    {
+      "id": "1",
+      "modified_at": null,
+      "delete_at": null
+    },
+    {
+      "id": "2",
+      "modified_at": null,
+      "delete_at": null
+    }
+  ],
+  "userPerRoom": [
+    {
+      "Reader_id": 1,
+      "last_activity_date": "2024-04-09",
+      "first_activity_date": "2024-04-09",
+      "chatRoom_id": 1,
+      "id": "3ba3"
+    },
+    {
+      "reader_id": 2,
+      "last_activity_date": "2024-04-10",
+      "first_activity_date": "2024-04-10",
+      "chatRoom_id": 2,
+      "id": "6929"
+    }
+  ],
+  "login": [
+    {
+      "id": "d327",
+      "_email": "flor_",
+      "_password": "123456",
+      "_firstName": "Miriam",
+      "_lastName": "Bonastre",
+      "_username": "flor_salvador01",
+      "_type": "writer",
+      "_subscription_id": "1",
+      "_imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/cb26f6d87e9ad5e5d5d1ff05263f034c0a6c96b7/frontend/src/assets/images/flor-profile.png?raw=true"
+    }
+  ]
+}

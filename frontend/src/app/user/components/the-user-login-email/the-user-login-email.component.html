@@ -1,0 +1,41 @@
+<div *ngIf="showEmailLogin" class="user-login-email w-full flex justify-center items-center fixed" (click)="closeLogin()" aria-label="Pantalla de inicio de sesión con correo electrónico">
+  <mat-card (click)="$event.stopPropagation()" class="login-card flex justify-center items-center" aria-label="Tarjeta de inicio de sesión con correo electrónico">
+    <mat-card-title>
+      <h3 class="text-center font-bold"> Iniciar sesión con correo electrónico </h3>
+    </mat-card-title>
+    <mat-card-content>
+      <div class="card flex justify-center">
+        <div class="flex flex-col gap-1">
+          <mat-form-field class="w-full">
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput [formControl]="email" placeholder="Ingresar correo electrónico" aria-label="Campo de correo electrónico">
+          </mat-form-field>
+          <mat-form-field class="w-full">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [formControl]="password" [type]="hide ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <div class="flex justify-center gap-2 mt-3">
+            <button mat-raised-button class="w-full bg-white" (click)="backToLogin()" aria-label="Botón para volver">
+              Atrás
+            </button>
+            <button mat-raised-button class="w-full bg-white" aria-label="Botón para iniciar sesión" (click)="login()">
+              Iniciar sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-footer>
+      <div class="flex justify-center flex-col">
+        <h5 class="text-center cursor-pointer" aria-label="Link para recuperar contraseña">¿Olvidaste tu contraseña?</h5>
+        <div class="flex justify-center gap-2">
+          <h5 class="text-center">¿No tienes una cuenta?</h5>
+          <h5 class="text-center cursor-pointer text-yellow-900" aria-label="Link para registrarse">Regístrarse</h5>
+        </div>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+</div>

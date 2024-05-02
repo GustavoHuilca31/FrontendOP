@@ -1,5 +1,6 @@
 .navbar-tools img{
   cursor: pointer;
+  ;
 }
 .example-icon {
   display: none;
@@ -27,7 +28,6 @@ span{
 
 .search-input{
   display:flex;
-
 }
 
 .search-btn{
@@ -67,6 +67,12 @@ span{
 .mat-toolbar .toolbar-container {
   flex: 1;
 }
+.publish-btn{
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
 .sidenav-list {
   display: flex;
@@ -81,6 +87,10 @@ span{
   }
 
   .toolbar-sections{
+    display: none;
+  }
+
+  .logged-container{
     display: none;
   }
 

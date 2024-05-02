@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, ViewChild} from '@angular/core';
+import {ChangeDetectorRef, Component, EventEmitter, Output, ViewChild} from '@angular/core';
 import {MatToolbar} from "@angular/material/toolbar";
 import {MatIcon} from "@angular/material/icon";
 import {MatIconButton} from "@angular/material/button";
@@ -6,6 +6,11 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListItem, MatNavList} from "@angular/material/list";
 import {MediaMatcher} from "@angular/cdk/layout";
 import {RouterLink} from "@angular/router";
+import {NgIf} from "@angular/common";
+import {User} from "../../../shared/model/user.entity";
+import {UsersService} from "../../../shared/service/users.service";
+import {TheUserLoginEmailComponent} from "../../../user/components/the-user-login-email/the-user-login-email.component";
+import {TheUserLoginComponent} from "../../../user/components/the-user-login/the-user-login.component";
 
 @Component({
   selector: 'navbar-content',
@@ -17,7 +22,10 @@ import {RouterLink} from "@angular/router";
     MatSidenavModule,
     MatNavList,
     MatListItem,
-    RouterLink
+    RouterLink,
+    TheUserLoginEmailComponent,
+    NgIf,
+    TheUserLoginComponent
   ],
   templateUrl: './navbar-content.component.html',
   styleUrl: './navbar-content.component.css'
@@ -25,16 +33,50 @@ import {RouterLink} from "@angular/router";
 export class NavbarContentComponent {
   mobileQuery: MediaQueryList;
 
+  loggedInUser: User|null = null;
+
   private _mobileQueryListener: () => void;
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher, private usersService: UsersService) {
+    this.usersService.getLoggedInUser().subscribe((user) => {
+      this.loggedInUser = user;
+      console.log(this.loggedInUser);
+    });
     this.mobileQuery = media.matchMedia('(max-width: 1024px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
 
+  isLoggedIn() {
+    return this.loggedInUser !== null;
+
+  }
+
+  ngOnInit(): void {
+
+  }
+
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  showLogin = false;
+  showEmailLogin = false;
+
+  openLogin() {
+    this.showLogin = true;
+  }
+
+  handleCloseLogin() {
+    this.showLogin = false;
+  }
+
+  openEmailLogin() {
+    this.showEmailLogin = true;
+  }
+
+  handleCloseEmailLogin() {
+    this.showEmailLogin = false;
   }
 
 }
