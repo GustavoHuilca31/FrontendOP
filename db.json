@@ -88,6 +88,13 @@
   ],
   "chatRoom": [
     {
+      "id": "1",
+      "created_date": "2024-04-09",
+      "end_date": null,
+      "topic": 789,
+      "active": true
+    },
+    {
       "id": "2",
       "created_date": "2024-04-10",
       "end_date": null,
@@ -115,7 +122,7 @@
     {
       "id": "1",
       "content": "Hello!",
-      "chat_id": "1",
+      "chat_id": 1,
       "isRead": false,
       "isSend": true
     },
@@ -298,7 +305,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit mauris ornare malesuada himenaeos eleifend morbi, vivamus nostra faucibus platea nisl nec lacinia hendrerit ultricies id maecenas diam. Eget vel aliquet nam penatibus vulputate felis dapibus magnis montes auctor ut, augue placerat praesent class condimentum litora eros sociis iaculis. ",
       "date_publish": "2024-04-09",
       "type": "book",
-      "likes": 17,
+      "likes": 21,
       "views": 20,
       "templateState_id": 1,
       "template_History_id": 1,
@@ -325,7 +332,7 @@
       "description": "Cien años de soledad narra la historia de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo. La novela combina realismo mágico con elementos históricos y sociales, creando un mundo rico y evocador.",
       "date_publish": "1967-05-30",
       "type": "book",
-      "likes": 6,
+      "likes": 10,
       "views": 20000,
       "templateState_id": 3,
       "template_History_id": 3,
@@ -586,7 +593,9 @@
       "last_activity_date": "2024-04-10",
       "first_activity_date": "2024-04-10",
       "chatRoom_id": 2,
-      "id": "bdb5"
+      "id": "6929"
     }
+  ],
+  "login": [
   ]
 }
