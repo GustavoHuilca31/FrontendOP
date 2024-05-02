@@ -1,0 +1,592 @@
+{
+  "chapters": [
+    {
+      "id": "1",
+      "title": "Prologo",
+      "book_id": 1,
+      "likes": 2
+    }
+  ],
+  "chat": [
+    {
+      "id": "1",
+      "chatRoom_id": 1,
+      "title": 123,
+      "created_at": "2024-04-09"
+    },
+    {
+      "id": "2",
+      "chatRoom_id": 2,
+      "title": 456,
+      "created_at": "2024-04-10"
+    },
+    {
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "ALWW942"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "jQA-m5o"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "W7TeOnC"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "nIXR4QX"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "tmRbz64"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "AqUV1gw"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "aY--u43"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "WPEKwWW"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "XAPn-ms"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "iiOL9W1"
+    },
+    {
+      "chatRoom_id": 1,
+      "title": "New Chat",
+      "created_date": "2024-05-02",
+      "id": "Qjidu1Z"
+    }
+  ],
+  "chatRoom": [
+    {
+      "id": "2",
+      "created_date": "2024-04-10",
+      "end_date": null,
+      "topic": 101112,
+      "active": true
+    }
+  ],
+  "commission": [
+    {
+      "id": "1",
+      "amount": 100,
+      "content": "Lorem ipsum",
+      "get_date": "2024-04-09",
+      "rewards_id": 1
+    },
+    {
+      "id": "2",
+      "amount": 200,
+      "content": "Dolor sit amet",
+      "get_date": "2024-04-10",
+      "rewards_id": 2
+    }
+  ],
+  "message": [
+    {
+      "id": "1",
+      "content": "Hello!",
+      "chat_id": "1",
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "2",
+      "content": "Hi there!",
+      "chat_id": 2,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "b92a",
+      "content": "Mucho gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "16e9",
+      "content": "Es todo un placer",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "7273",
+      "content": "Hola",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "19f8",
+      "content": "Un gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "id": "5742",
+      "content": "Igualmente",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true
+    },
+    {
+      "content": "Un gusto",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true,
+      "id": "errbKwe"
+    },
+    {
+      "content": "Un gusto Miriam",
+      "chat_id": 1,
+      "isRead": false,
+      "isSend": true,
+      "id": "GKqDTBz"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "reader_id": 1,
+      "create_at": "2024-04-09",
+      "title": "Portfolio 1",
+      "description": "Description 1",
+      "quantity": 10
+    },
+    {
+      "id": "2",
+      "reader_id": 2,
+      "create_at": "2024-04-10",
+      "title": "Portfolio 2",
+      "description": "Description 2",
+      "quantity": 20
+    }
+  ],
+  "reader": [
+    {
+      "id": "3",
+      "name": "Miriam Bonastre",
+      "username": "miriam123",
+      "email": "miriam_bonastre@gmail.com",
+      "password": "password321",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/miriam.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "4",
+      "name": "Laia López",
+      "username": "laialopez",
+      "email": "laia_lopez@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/lala-lopez.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "5",
+      "name": "Gabriel Picolo",
+      "username": "gabriel_picolo",
+      "email": "gabriel_picolo@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/picolo.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "6",
+      "name": "Mireia Martínez",
+      "username": "mireia_martinez",
+      "email": "mireia_martinez@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/Mieria.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "7",
+      "name": "Cristina Cid",
+      "username": "jordi_puig",
+      "email": "cristina@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/cid.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "8",
+      "name": "MMIvens",
+      "username": "mmivens",
+      "email": "mmivens@gmail.com",
+      "password": "password123",
+      "type": "artist",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
+      "subscription_id": 1
+    },
+    {
+      "id": "9",
+      "name": "Flor Salvador",
+      "username": "Flor M. Salvador",
+      "email": "mmivens@gmail.com",
+      "password": "password123",
+      "type": "writer",
+      "imgUrl": "https://github.com/Open-Source-SW54-Group-3-ArtCollab/Frontend/blob/571c1e9ba1adca82c7bce5cd65ce61416c611de7/frontend/src/assets/images/mmivens.png?raw=true",
+      "subscription_id": 1
+    }
+  ],
+  "reward": [
+    {
+      "id": "1",
+      "type": 1,
+      "amount": 50,
+      "reader_id": 1
+    },
+    {
+      "id": "2",
+      "type": 2,
+      "amount": 100,
+      "reader_id": 2
+    }
+  ],
+  "subscription": [
+    {
+      "flag": true,
+      "id": "1",
+      "type": "Type A"
+    },
+    {
+      "flag": true,
+      "id": "2",
+      "type": "Type B"
+    }
+  ],
+  "template": [
+    {
+      "title": "Boulevard",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit mauris ornare malesuada himenaeos eleifend morbi, vivamus nostra faucibus platea nisl nec lacinia hendrerit ultricies id maecenas diam. Eget vel aliquet nam penatibus vulputate felis dapibus magnis montes auctor ut, augue placerat praesent class condimentum litora eros sociis iaculis. ",
+      "date_publish": "2024-04-09",
+      "type": "book",
+      "likes": 17,
+      "views": 20,
+      "templateState_id": 1,
+      "template_History_id": 1,
+      "imgUrl": "https://github.com/Aplicaciones-Web-WX53-Group2-ArtCollab/Frontend-/blob/bounded-context/content/src/assets/images/Boulevard-Cover.jpg?raw=true",
+      "id": "1",
+      "portfolio_id": 1,
+      "genre": "Drama"
+    },
+    {
+      "title": "Kid and Balloons",
+      "description": "A kid asking for balloons to his father.",
+      "date_publish": "2024-04-10",
+      "type": "ilustration",
+      "likes": 50,
+      "views": 100,
+      "templateState_id": 2,
+      "template_History_id": 2,
+      "imgUrl": "https://cdn.dribbble.com/uploads/592/original/e6612d3e44add18ca3d506d4259fba52.png?1544827718",
+      "id": "2",
+      "portfolio_id": 2
+    },
+    {
+      "title": "Cien años de soledad",
+      "description": "Cien años de soledad narra la historia de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo. La novela combina realismo mágico con elementos históricos y sociales, creando un mundo rico y evocador.",
+      "date_publish": "1967-05-30",
+      "type": "book",
+      "likes": 6,
+      "views": 20000,
+      "templateState_id": 3,
+      "template_History_id": 3,
+      "imgUrl": "https://tse4.mm.bing.net/th?id=OIP.nwenpbzxiX1rdwotc1lv5QHaK-&pid=Api&P=0&h=180",
+      "id": "3",
+      "portfolio_id": 3,
+      "genre": "fantasía"
+    },
+    {
+      "title": "El principito",
+      "description": "El principito es un cuento filosófico que narra el encuentro entre un piloto perdido en el desierto del Sahara y un joven príncipe proveniente de otro planeta. A través de su viaje, el principito descubre lecciones sobre la amistad, el amor y la importancia de ver más allá de lo superficial.",
+      "date_publish": "1943-04-06",
+      "type": "book",
+      "likes": 650,
+      "views": 1000,
+      "templateState_id": 4,
+      "template_History_id": 4,
+      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.fHF9K1mCC7iI22YtYRm33QHaJd&pid=Api&P=0&h=180",
+      "id": "4",
+      "portfolio_id": 4,
+      "genre": "fantasía"
+    },
+    {
+      "title": "Space Exploration",
+      "description": "An illustration depicting a spaceship exploring the vastness of space.",
+      "date_publish": "2024-04-14",
+      "type": "ilustration",
+      "likes": 60,
+      "views": 100,
+      "templateState_id": 6,
+      "template_History_id": 6,
+      "imgUrl": "https://i.pinimg.com/originals/91/9e/f2/919ef28260c025c865e49933b443cf2c.jpg",
+      "id": "6",
+      "portfolio_id": 6
+    },
+    {
+      "title": "Harry Potter y la Piedra Filosofal",
+      "description": "Harry Potter y la Piedra Filosofal es el primer libro de la serie Harry Potter escrita por J.K. Rowling. Narra la historia de Harry Potter, un joven mago que descubre su verdadera identidad y se aventura en el mundo mágico.",
+      "date_publish": "2024-04-15",
+      "type": "book",
+      "likes": 15,
+      "views": 20300,
+      "templateState_id": 7,
+      "template_History_id": 7,
+      "imgUrl": "https://covers.alibrate.com/b/59872e9ccba2bce50c1cbcd7/34fe7d67-f9d6-421c-85f6-6ebc81532936/share",
+      "id": "7",
+      "portfolio_id": 7,
+      "genre": "fantasía"
+    },
+    {
+      "title": "Cityscape",
+      "description": "An illustration depicting a bustling cityscape at night.",
+      "date_publish": "2024-04-16",
+      "type": "ilustration",
+      "likes": 410,
+      "views": 800,
+      "templateState_id": 8,
+      "template_History_id": 8,
+      "imgUrl": "https://i.pinimg.com/originals/78/85/18/788518ac6ef45a95a7b99e0f0537d26c.jpg",
+      "id": "8",
+      "portfolio_id": 8
+    },
+    {
+      "title": "Orgullo y Prejuicio",
+      "description": "Orgullo y Prejuicio es una novela clásica de Jane Austen que sigue la historia de Elizabeth Bennet y su complicada relación con el orgulloso Sr. Darcy.",
+      "date_publish": "2024-04-17",
+      "type": "book",
+      "likes": 580,
+      "views": 1120,
+      "templateState_id": 9,
+      "template_History_id": 9,
+      "imgUrl": "https://i.pinimg.com/originals/1d/53/f4/1d53f4a35b9004b3d1ce731a226f30e0.jpg",
+      "id": "9",
+      "portfolio_id": 9,
+      "genre": "romance"
+    },
+    {
+      "title": "Enchanted Forest",
+      "description": "An illustration depicting an enchanted forest with magical creatures.",
+      "date_publish": "2024-04-18",
+      "type": "ilustration",
+      "likes": 350,
+      "views": 870,
+      "templateState_id": 10,
+      "template_History_id": 10,
+      "imgUrl": "https://i.pinimg.com/originals/bc/64/0b/bc640b5b89ef0ff54d799f0038d8b1e7.jpg",
+      "id": "10",
+      "portfolio_id": 10
+    },
+    {
+      "title": "La Metamorfosis",
+      "description": "La Metamorfosis es una novela corta escrita por Franz Kafka que sigue la historia de Gregor Samsa, quien se despierta una mañana convertido en un insecto.",
+      "date_publish": "2024-04-03",
+      "type": "book",
+      "likes": 187,
+      "views": 312,
+      "templateState_id": 11,
+      "template_History_id": 11,
+      "imgUrl": "https://tse2.mm.bing.net/th?id=OIP.gsFT5jQkEOx-UDeaEVakPAHaLU&pid=Api&P=0&h=180",
+      "id": "11",
+      "portfolio_id": 11,
+      "genre": "drama"
+    },
+    {
+      "title": "Underwater World",
+      "description": "An illustration depicting a colorful underwater world with marine life.",
+      "date_publish": "2024-04-20",
+      "type": "ilustration",
+      "likes": 420,
+      "views": 1400,
+      "templateState_id": 12,
+      "template_History_id": 12,
+      "imgUrl": "https://i.pinimg.com/originals/0f/3d/ab/0f3dabf9c8e68fd5ba47b293f7403d6c.jpg",
+      "id": "12",
+      "portfolio_id": 12
+    },
+    {
+      "title": "Cien Años de Soledad",
+      "description": "Cien Años de Soledad es una obra maestra de la literatura escrita por Gabriel García Márquez. Narra la historia de la familia Buendía en el ficticio pueblo de Macondo.",
+      "date_publish": "2024-04-21",
+      "type": "book",
+      "likes": 2,
+      "views": 1400,
+      "templateState_id": 13,
+      "template_History_id": 13,
+      "imgUrl": "https://tse3.mm.bing.net/th?id=OIP.o7EweG8Sy9Qq7zLhRWYkmgHaMo&pid=Api&P=0&h=180",
+      "id": "13",
+      "portfolio_id": 13,
+      "genre": "drama"
+    },
+    {
+      "title": "Fantasy Castle",
+      "description": "An illustration depicting a majestic fantasy castle on a hilltop.",
+      "date_publish": "2024-04-22",
+      "type": "ilustration",
+      "likes": 125,
+      "views": 540,
+      "templateState_id": 14,
+      "template_History_id": 14,
+      "imgUrl": "https://i.pinimg.com/originals/19/ea/47/19ea472b6db00d43b0ebc0e5ee9a0678.jpg",
+      "id": "14",
+      "portfolio_id": 14
+    },
+    {
+      "title": "1984",
+      "description": "1984 es una novela distópica escrita por George Orwell que sigue la historia de Winston Smith en un mundo totalitario y vigilado constantemente.",
+      "date_publish": "2024-04-23",
+      "type": "book",
+      "likes": 2,
+      "views": 1250,
+      "templateState_id": 15,
+      "template_History_id": 15,
+      "imgUrl": "https://tse2.mm.bing.net/th?id=OIP.L9GCrCznPuEmHSIHTIltkQHaLZ&pid=Api&P=0&h=180",
+      "id": "15",
+      "portfolio_id": 15,
+      "genre": "drama"
+    },
+    {
+      "title": "Forest Spirit",
+      "description": "An illustration depicting a mysterious forest spirit surrounded by glowing fireflies.",
+      "date_publish": "2024-04-24",
+      "type": "ilustration",
+      "likes": 321,
+      "views": 1102,
+      "templateState_id": 16,
+      "template_History_id": 16,
+      "imgUrl": "https://i.pinimg.com/originals/4e/53/6f/4e536f854230a21445c8d16bb8a54135.jpg",
+      "id": "16",
+      "portfolio_id": 16
+    },
+    {
+      "title": "El Alquimista",
+      "description": "El Alquimista es una novela escrita por Paulo Coelho que sigue la historia de Santiago, un joven pastor que emprende un viaje en busca de su tesoro personal.",
+      "date_publish": "2024-04-10",
+      "type": "book",
+      "likes": 3,
+      "views": 512,
+      "templateState_id": 17,
+      "template_History_id": 17,
+      "imgUrl": "https://tse1.mm.bing.net/th?id=OIP.uKXYEcaOZMGtNhEBVV77HgHaLH&pid=Api&P=0&h=180",
+      "id": "17",
+      "portfolio_id": 17,
+      "genre": "drama"
+    },
+    {
+      "title": "Sunset",
+      "description": "An illustration depicting a beautiful sunset over the ocean.",
+      "date_publish": "2024-04-02",
+      "type": "ilustration",
+      "likes": 254,
+      "views": 547,
+      "templateState_id": 18,
+      "template_History_id": 18,
+      "imgUrl": "https://i.pinimg.com/originals/52/9f/43/529f439a9311d18f2b7d9a7faa99a4b9.jpg",
+      "id": "18",
+      "portfolio_id": 18
+    },
+    {
+      "title": "El Señor de los Anillos",
+      "description": "El Señor de los Anillos es una trilogía escrita por J.R.R. Tolkien que sigue la aventura de Frodo Bolsón y su misión de destruir el Anillo Único.",
+      "date_publish": "2024-04-01",
+      "type": "book",
+      "likes": 1540,
+      "views": 3120,
+      "templateState_id": 19,
+      "template_History_id": 19,
+      "imgUrl": "https://tse3.mm.bing.net/th?id=OIP.0-k_Byjyd50llciwHceNKQHaLd&pid=Api&P=0&h=180",
+      "id": "19",
+      "portfolio_id": 19,
+      "genre": "fantasía"
+    },
+    {
+      "title": "Starry Night",
+      "description": "An illustration depicting a starry night sky with a silhouette of trees.",
+      "date_publish": "2024-04-01",
+      "type": "ilustration",
+      "likes": 740,
+      "views": 1248,
+      "templateState_id": 20,
+      "template_History_id": 20,
+      "imgUrl": "https://i.pinimg.com/originals/c0/46/2f/c0462f5a27f6cc16d17f0c123d8c7602.jpg",
+      "id": "20",
+      "portfolio_id": 20
+    }
+  ],
+  "templateState": [
+    {
+      "id": "1",
+      "flag": true
+    },
+    {
+      "id": "2",
+      "flag": false
+    }
+  ],
+  "template_History": [
+    {
+      "id": "1",
+      "modified_at": null,
+      "delete_at": null
+    },
+    {
+      "id": "2",
+      "modified_at": null,
+      "delete_at": null
+    }
+  ],
+  "userPerRoom": [
+    {
+      "Reader_id": 1,
+      "last_activity_date": "2024-04-09",
+      "first_activity_date": "2024-04-09",
+      "chatRoom_id": 1,
+      "id": "8d9d"
+    },
+    {
+      "reader_id": 2,
+      "last_activity_date": "2024-04-10",
+      "first_activity_date": "2024-04-10",
+      "chatRoom_id": 2,
+      "id": "bdb5"
+    }
+  ]
+}
