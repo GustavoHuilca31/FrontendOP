@@ -1,0 +1,8 @@
+@media (max-width: 430px) {
+  .edit-tabview {
+    width: 80%;
+  }
+  the-book-details-edit-tabview{
+    width: 80%;
+  }
+}

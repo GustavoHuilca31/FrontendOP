@@ -1,0 +1,31 @@
+.cards-container{
+  background-color: rgba(0, 206, 209, 0.4);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+hr{
+  border: 1px solid  black;
+}
+
+button{
+  font-family: Nunito Sans;
+}
+
+@media (width>=430px) and (width<=932px){
+  .cards-container{
+    width: 80%;
+  }
+}
+
+@media (width>=375px) and (width<=844px){
+  .cards-container{
+    width: 90%;
+  }
+}
+

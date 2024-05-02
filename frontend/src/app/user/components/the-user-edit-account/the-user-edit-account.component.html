@@ -1,0 +1,39 @@
+<div class="back">
+  <h1>Account</h1>
+  <p class="text col">Change your account information and privacy settings</p>
+  <br/>
+  <div class="border border-round">
+    <mat-card>
+      <div class="center">
+        <p class="text">Name
+          <button class="orange-buttton" mat-raised-button color="warn" [disabled]="showCancel.username" (click)="toggleCancel('username')">Change</button>
+          <button class="red-button" mat-raised-button color="warn" *ngIf="showCancel.username" (click)="toggleCancel('username')">Delete</button>
+        </p>
+        <p class="text">Password
+          <button class="orange-buttton" mat-raised-button color="warn" [disabled]="showCancel.username" (click)="toggleCancel('username')">Change</button>
+          <button class="red-button" mat-raised-button color="warn" *ngIf="showCancel.username" (click)="toggleCancel('username')">Delete</button>
+        </p>
+        <p class="text">Email
+          <button class="orange-buttton" mat-raised-button color="warn" [disabled]="showCancel.username" (click)="toggleCancel('username')">Change</button>
+          <button class="red-button" mat-raised-button color="warn" *ngIf="showCancel.username" (click)="toggleCancel('username')">Delete</button>
+        </p>
+        <p class="text">Subscription
+          <button class="orange-buttton" mat-raised-button color="warn" [disabled]="showCancel.username" (click)="toggleCancel('username')">Change</button>
+          <button class="red-button" mat-raised-button color="warn" *ngIf="showCancel.username" (click)="toggleCancel('username')">Delete</button>
+        </p>
+        <p class="text">Artist
+          <button class="orange-buttton" mat-raised-button color="warn" [disabled]="showCancel.username" (click)="toggleCancel('username')">Change</button>
+          <button class="red-button" mat-raised-button color="warn" *ngIf="showCancel.username" (click)="toggleCancel('username')">Delete</button>
+        </p>
+      </div>
+    </mat-card>
+  </div>
+  <br/>
+  <div class="center">
+    <button mat-raised-button color="primary" class="lightblue-button">Submit</button>
+    <br/>
+    <br/>
+    <p class="text">Or do you want <button mat-raised-button class="transparent" color="primary">Change Profile</button></p>
+    <br/>
+  </div>
+</div>

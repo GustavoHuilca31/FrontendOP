@@ -1,0 +1,13 @@
+.register-container {
+  width: 80%;
+}
+
+.register-button{
+  background-color: #88d7df;
+}
+
+.input-text{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+}

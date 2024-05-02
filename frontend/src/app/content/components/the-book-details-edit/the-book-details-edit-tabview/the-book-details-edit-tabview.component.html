@@ -1,0 +1,58 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start" color="warn">
+  <mat-tab label="Detalles de la historia">
+    <div class="input-textarea flex flex-col space-y-4 mt-5 ml-5">
+      <div class="flex flex-col space-y-4">
+        <mat-label>Título</mat-label>
+        <mat-form-field class="chapter-title min-w-36 max-w-lg w-full mb-4">
+          <input matInput placeholder="Título" type="text" [(ngModel)]="value">
+        </mat-form-field>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <mat-label>Descripción</mat-label>
+        <mat-form-field class="chapter-content min-w-36 max-w-lg w-full ">
+          <textarea matInput rows="10" placeholder="Descripción">{{description}}</textarea>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Tabla de contenidos">
+       @for(chapter of bookChapters; track chapter){
+         <div class="flex justify-between mx-6 mt-3">
+           @if(!editMode){
+             <h3>{{chapter.title}} </h3>
+             <div class="flex gap-6">
+               <div class="rounded-full  flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110 hover:bg-red-500">
+                 <fa-icon [icon]="faHeart" class="text-lg"></fa-icon>
+               </div>
+               <h3> {{bookData.likes}} </h3>
+               <div class="bg-cyan-500 rounded-full text-white flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110">
+                 <fa-icon [icon]="faPencil" class="text-lg" (click)="setEditMode()"></fa-icon>
+               </div>
+             </div>
+           }
+           @else{
+             <input type="text" [(ngModel)]="currentTitle">
+             <div class="flex gap-6">
+               <div class="rounded-full  flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110 hover:bg-red-500">
+                 <fa-icon [icon]="faHeart" class="text-lg"></fa-icon>
+               </div>
+               <h3> {{bookData.likes}} </h3>
+               <div class="bg-cyan-500 rounded-full text-white flex justify-center items-center w-10 h-10 hover:cursor-pointer hover:scale-110">
+                 <fa-icon [icon]="faPencil" class="text-lg" (click)="setEditMode()"></fa-icon>
+               </div>
+               <button class="bg-cyan-500 text-white px-6 rounded-lg" (click)="editTitle(chapter.id)"> Update </button>
+             </div>
+           }
+         </div>
+       }
+  </mat-tab>
+
+  <mat-tab label="Ingresos obtenidos">
+     <div class="bg-cyan-100 flex justify-center items-center w-72 h-52 rounded-lg">
+       <div class="absolute">
+         <img width="170" src="./assets/images/reward-icon.png"/>
+       </div>
+         <h1> S/. {{bookData.revenue}}</h1>
+     </div>
+  </mat-tab>
+</mat-tab-group>

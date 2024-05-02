@@ -1,0 +1,19 @@
+<section class="mx-auto max-w-full">
+  <mat-card class="mx-auto" style="max-width: 100%;">
+    <img src="../../../../assets/images/banner-artist.png" alt="Banner" aria-label="Banner" class="mx-auto w-full contain-content">
+  </mat-card>
+</section>
+<section >
+  <mat-card class="mx-auto mt-10 mb-10 shadow-none">
+    <p class="text-3xl font-bold text-center" aria-label="Artistas">Artistas</p>
+  </mat-card>
+
+  <mat-grid-list cols="3" rowHeight="2:2">
+    <mat-grid-tile *ngFor="let artist of artists">
+      <mat-card class="flex w-80 mx-auto cursor-pointer" routerLink="/illustrator-profile">
+        <img mat-card-image [src]="artist._imgUrl" class="w-80 contain-content">
+        <mat-card-content class="text-center font-semibold text-2xl mt-5">{{artist._name}}</mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</section>

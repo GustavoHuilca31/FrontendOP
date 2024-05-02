@@ -1,0 +1,49 @@
+.blue-icon{
+  color:#012840;
+}
+
+.card{
+  background-color: rgba(9, 148, 163, 0.44);
+}
+
+.border{
+  border-radius: 1.5rem;
+}
+.history-container{
+  background-color: rgba(17, 174, 191, 0.19);
+}
+.cards-container{
+  border-radius: 1.5rem;
+}
+.mat-mdc-card-content:last-child {
+  padding-bottom: 0;
+}
+
+@media (width>=932px) and (width<=1204px){
+  .cards-container{
+    width: 80%;
+  }
+  .button-container{
+    width: 80%;
+  }
+}
+
+@media (width>=430px) and (width<=932px){
+  .cards-container{
+    width: 80%;
+  }
+  .info-container{
+    width: 80%;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (width>=375px) and (width<=844px){
+  .cards-container{
+    width: 90%;
+    margin:1.5rem;
+  }
+  .info-container{
+    width: 90%;
+  }
+}

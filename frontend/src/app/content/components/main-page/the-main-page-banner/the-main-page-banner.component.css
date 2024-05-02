@@ -1,0 +1,35 @@
+.banner-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../../../assets/images/banner-background.png");
+}
+
+.banner-gallery mat-card {
+  width: 300px;
+  margin: 10px;
+}
+
+.banner-gallery button {
+  margin: 10px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.indicators span {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: lawngreen;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.indicators .active {
+  background-color: forestgreen;
+}

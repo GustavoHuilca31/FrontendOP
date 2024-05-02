@@ -49,3 +49,9 @@ footer{
     flex-direction: column;
   }
 }
+@media (width<=350px) {
+  footer{
+    padding:1rem;
+    width: 400px;
+  }
+}

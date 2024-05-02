@@ -1,0 +1,16 @@
+.circle h2 {
+   font-size: 13px;
+}
+.circle h1{
+    font-size: 20px;
+}
+
+.step-container{
+   width: 90%;
+}
+
+@media (width<=340px){
+  .step-main-container{
+    width: 400px;
+  }
+}

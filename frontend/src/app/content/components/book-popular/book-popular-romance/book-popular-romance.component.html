@@ -1,0 +1,12 @@
+<div class="flex flex-row flex-wrap gap-10 mt-10">
+  @for(book of books; track book){
+    <div class="flex flex-col justify-center items-center">
+      <img width="200" height="100" [src]="book.imgUrl" alt="{{book.title}}">
+      <h2>{{book.title}}</h2>
+      <div class="flex gap-3">
+        <fa-icon [icon]="faHeart" class="text-lg" (click)="update(book.id)"></fa-icon>
+        <p class="font-bold mt-12 hover:cursor-pointer" >{{book.likes}}</p>
+      </div>
+    </div>
+  }
+</div>

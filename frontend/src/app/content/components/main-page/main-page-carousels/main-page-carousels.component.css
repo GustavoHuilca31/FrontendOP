@@ -1,0 +1,47 @@
+.banner-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-gallery mat-card {
+  width: 300px;
+  margin: 10px;
+}
+
+.banner-gallery button {
+  margin: 10px;
+}
+
+.items-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10rem;
+  align-items: center;
+}
+
+.carousel-container {
+  overflow: auto;
+}
+
+img {
+  height: 300px;
+  width: 200px;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    height: 150px;
+    width: 100px;
+  }
+  .carousel-container {
+    overflow: auto;
+  }
+  .items-gallery{
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}

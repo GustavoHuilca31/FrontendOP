@@ -3,32 +3,42 @@
     <div class="toolbar-container flex justify-center gap-16">
       <div class="toolbar-content flex gap-5">
         <div class="navbar-tools">
-          <img src="./assets/logo.png"  class="logo hidden lg:block" width="60" height="50" alt="Artcollab Logo">
           <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"  (click)="snav.toggle()" >
             <mat-icon>menu</mat-icon>
           </button>
         </div>
           <div class="toolbar-sections flex justify-center items-center gap-8">
-            <span> Géneros </span>
-            <span>Populares </span>
-            <span> Suscripciones </span>
-            <span> Recomendaciones </span>
-            <span> Monetización </span>
-            <span> Artistas </span>
+            <img routerLink="/home" src="./assets/logo.png"  class="logo hidden lg:block cursor-pointer" width="60" height="50" alt="Artcollab Logo">
+            <span routerLink="/genre"> Géneros </span>
+            <span routerLink="/populars">Populares </span>
+            <span routerLink="/subscription"> Suscripciones  </span>
+            <span routerLink="/monetization"> Monetización </span>
+            <span routerLink="/artist"> Artistas </span>
           </div>
       </div>
-      <div class="flex justify-center items-center gap-4">
+      <div class="flex justify-center items-center gap-4 w-full">
         <div class="search-input">
-          <div class="search-btn mt-1">
-            <mat-icon>search</mat-icon>
-          </div>
-          <div class="input-btn">
-            <input class="lg:p-1" type="text"/>
+          <div class="flex">
+            <div class="search-btn mt-1">
+              <mat-icon>search</mat-icon>
+            </div>
+            <div class="input-btn">
+              <input class="lg:p-1" type="text"/>
+            </div>
           </div>
         </div>
-        <div class="login-container">
-          <button class="login-btn p-2 rounded-lg hidden lg:block"> Iniciar Sesión </button>
+        <div class="logged-container flex gap-3 h-full" *ngIf="loggedInUser; else notLoggedIn">
+          <button class="publish-btn bg-cyan-400 rounded-lg text-cyan-700 p-2 m-2" (click)="publish()"> Publicar </button>
+          <div class="user-info bg-cyan-600 text-white gap-3  rounded-lg flex align-middle justify-center p-2  m-2 px-4" routerLink="/writer-profile">
+            <img [src]="loggedInUser._imgUrl" alt="User profile picture" width="25px" height="25px">
+            <span class="flex justify-center self-center">{{ loggedInUser._username }}</span>
+          </div>
         </div>
+        <ng-template #notLoggedIn>
+          <div class="login-container">
+            <button class="login-btn p-2 rounded-lg hidden lg:block"  (click)="openLogin()"> Iniciar Sesión </button>
+          </div>
+        </ng-template>
       </div>
     </div>
   </mat-toolbar>
@@ -44,10 +54,23 @@
         <span> Recomendaciones </span>
         <span> Monetización </span>
         <span> Artistas </span>
-        <button class="login-btn p-2 rounded-lg"> Iniciar Sesión </button>
+        <div class="login-container pt-10 flex flex-col gap-5" *ngIf="loggedInUser; else notLoggedIn">
+          <button class="bg-cyan-400 rounded-lg text-cyan-700 p-2"> Publicar </button>
+          <div class="user-info" routerLink="/writer-profile">
+            <img [src]="loggedInUser._imgUrl" alt="User profile picture" width="50px">
+            <span >{{ loggedInUser._username }}</span>
+          </div>
+        </div>
+        <ng-template #notLoggedIn>
+          <div class="login-container">
+            <button class="login-btn p-2 rounded-lg hidden lg:block" routerLink="/home" (click)="openLogin()" > Iniciar Sesión </button>
+          </div>
+        </ng-template>
 
       </mat-nav-list>
     </mat-sidenav>
 
   </mat-sidenav-container>
 </div>
+
+<app-the-user-login [showLogin]="showLogin" *ngIf="showLogin" (close)="handleCloseLogin()" (closeEmail)="handleCloseEmailLogin()"/>

@@ -1,0 +1,102 @@
+/* artist-room.component.css */
+
+.bg-white {
+  background-color: white;
+}
+.bd-gray{
+  background-color: #e4dcdc;
+}
+
+.bg-yellow-300 {
+  background-color: #ecd159; /* Este es un tono de amarillo, puedes ajustarlo a tus necesidades */
+}
+
+.border-noround {
+  border-radius: 0;
+}
+
+.mb-6 {
+  margin-bottom: 100px; /* Este es un valor arbitrario, puedes ajustarlo a tus necesidades */
+}
+
+
+.text-4xl {
+  font-size: 3em; /* Este es un valor arbitrario, puedes ajustarlo a tus necesidades */
+}
+textcenter{
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.sm\:flex {
+  display: flex;
+  /* Este estilo se aplicará solo en vistas pequeñas si utilizas algún tipo de sistema de diseño responsivo */
+}
+
+
+.column {
+  flex-direction: column;
+}
+
+.sm\:w-auto {
+  width: auto;
+  /* Este estilo se aplicará solo en vistas pequeñas si utilizas algún tipo de sistema de diseño responsivo */
+}
+
+.text-xl {
+  font-size: 1.25em; /* Este es un valor arbitrario, puedes ajustarlo a tus necesidades */
+}
+
+.surface-100 {
+  /* Esta clase parece ser específica de tu proyecto y su significado puede variar */
+}
+
+.mb-5 {
+  margin-bottom: 50px; /* Este es un valor arbitrario, puedes ajustarlo a tus necesidades */
+}
+
+.flex {
+  display: flex;
+}
+.justify-content-between
+{
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.mb-8 {
+  margin-bottom: 200px; /* Este es un valor arbitrario, puedes ajustarlo a tus necesidades */
+}
+
+
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-red-500 {
+  color: #f00; /* Este es un tono de rojo, puedes ajustarlo a tus necesidades */
+}
+@media (max-width: 600px) {
+  img {
+    width: 100px; /* Ajusta este valor a tus necesidades */
+    height: 100px; /* Ajusta este valor a tus necesidades */
+  }
+
+  .flexf {
+    flex-direction: column;
+  }
+}

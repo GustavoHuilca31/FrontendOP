@@ -1,0 +1,11 @@
+<div class="banner-gallery">
+  <button mat-button (click)="previousImage()"><fa-icon [icon]="faChevronLeft" [style.font-size.px]="13"></fa-icon></button>
+  <mat-card>
+    <img class="cursor-pointer" mat-card-image routerLink="/book-profile" [src]="images[currentImageIndex]?.url" [alt]="images[currentImageIndex]?.alt">
+  </mat-card>
+  <button mat-button (click)="nextImage()" ><fa-icon [icon]="faChevronRight" [style.font-size.px]="13"></fa-icon></button>
+</div>
+
+<div class="indicators">
+  <span *ngFor="let item of images; let i = index" [class.active]="i === currentImageIndex"></span>
+</div>

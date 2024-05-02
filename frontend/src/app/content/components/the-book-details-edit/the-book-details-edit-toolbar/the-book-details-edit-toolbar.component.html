@@ -1,0 +1,23 @@
+
+  <mat-toolbar class="toolbar">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="goBack()">
+      <mat-icon>chevron_left</mat-icon>
+    </button>
+    <div class="lg:flex-nowrap sm:flex flex-wrap justify-between">
+      <div class="toolbar-title 2xl:mr-96 2xl:pr-60 lg:mr-40 lg:pr-20 sm:mr-0 sm:pr-0">
+        <the-book-details-edit-toolbar-title/>
+      </div>
+      <div class="buttons 2xl:ml-96 2xl:pl-60 lg:ml-40 lg:pl-10 sm:ml-20 sm:pl-0 mt-4">
+        <button mat-stroked-button class="button-1 mx-2 lg:max-w-full sm:max-w-4" (click)="goBack()">
+          <p class="lg:text-lg sm:text-sm button-text text-black">
+            Cancelar
+          </p>
+        </button>
+        <button mat-stroked-button class="button-2 mx-2 lg:max-w-full sm:max-w-4" (click)="goBack()">
+          <p class="lg:text-lg sm:text-sm button-text text-white">
+            Guardar
+          </p>
+        </button>
+      </div>
+    </div>
+  </mat-toolbar>

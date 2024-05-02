@@ -1,0 +1,28 @@
+<div class="mt-16 flex flex-wrap justify-evenly">
+
+  <div class="flex flex-wrap w-10/12 gap-1 justify-between" aria-label="Books container">
+
+    <div *ngFor="let book of books" class="flex flex-col" aria-label="Books card">
+
+      <div class="flex" aria-label="Book image">
+        <img [src]="book.imgUrl" width="298" height="277" alt="book-image"/>
+      </div>
+
+      <div class="flex flex-col mt-2 mb-10">
+        <p class="text-2xl">{{ book.title }}</p>
+        <div class="flex flex-row justify-start">
+          <div class="flex justify-center items-center">
+            <fa-icon [icon]="faHeart" size="xl" class=" mb-3 mr-2"></fa-icon>
+          </div>
+          <p class="text-xl">{{ book.likes }}</p>
+
+          <div class="flex justify-center items-center">
+            <fa-icon [icon]="faEye" size="xl" class="mb-4 mr-2 ml-5"></fa-icon>
+          </div>
+          <h2 class="text-black">{{book.views}}</h2>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

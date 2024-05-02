@@ -1,0 +1,53 @@
+<div class="flex flex-col items-center justify-center mt-5">
+
+  <div class="w-7/12 flex flex-row  items-center justify-between mt-5 title">
+    <p class="font-bold text-2xl">Mis historias</p>
+    <div class="box flex contenedor">
+      <button mat-stroked-button class="button" (click)="publish()">
+        <p class="text-lg button-text text-white">
+          + Historia nueva
+        </p>
+      </button>
+    </div>
+  </div>
+
+  <mat-card class="p-2 w-7/12 mt-5 m-10 card divide-y divide-black cards-container" aria-label="Book detail card">
+    <mat-card-header class="flex flex-col " aria-label="Book information card header">
+      <div class="flex">
+        <p class="text-lg"> Todas las historias </p>
+      </div>
+    </mat-card-header>
+
+
+    <mat-card-content aria-label="Book information card content">
+      <div *ngFor="let book of books" class="flex mt-5 flex-wrap justify-between contenedor">
+        <div class="flex flex-row justify-center content">
+          <div>
+            <img [ngSrc]="book.imgUrl" [alt]="book.imgUrl" width="150" height="150" class="mb-5 p-1">
+          </div>
+          <div class="flex flex-col items-start ml-5 content">
+            <div>
+              <p class="text-2xl ">{{ book.title }}</p>
+            </div>
+            <p class="text-gray-500 text-lg">{{ book.date_publish }}</p>
+            <div class="flex flex-row">
+              <fa-icon [icon]="faEye" size="xl" class="p-2"></fa-icon>
+              <h2>{{ book.views }}</h2>
+              <fa-icon [icon]="faHeart" size="xl" class="p-2"></fa-icon>
+              <h2>{{ book.likes }}</h2>
+            </div>
+          </div>
+        </div>
+        <div class="flex contenedor">
+          <button mat-stroked-button class="button" (click)="edit()">
+            <p class="text-lg button-text">Editar historia</p>
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+
+
+  </mat-card>
+
+</div>
+

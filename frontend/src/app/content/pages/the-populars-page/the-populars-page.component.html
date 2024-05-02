@@ -1,0 +1,24 @@
+<navbar-content aria-label="Navigation bar"/>
+<div class="hero-controller">
+  <h1 aria-label="Page title: Most popular by genre"> Más popular por género</h1>
+  <mat-tab-group aria-label="Genre tabs group" color="warn">
+    @for (tab of asyncTabs | async; track tab) {
+      <mat-tab>
+        <ng-template  mat-tab-label>{{tab.label}}</ng-template>
+        @if(tab.label === 'Todo'){
+          <book-popular aria-label="Popular book in the genre"/>
+        }
+        @if(tab.label === 'Romance'){
+          <book-popular-romance/>
+        }
+        @if(tab.label === 'Fantasia'){
+          <book-popular-fantasy/>
+        }
+        @if(tab.label === 'Comedia'){
+          <book-popular-comedy/>
+        }
+      </mat-tab>
+    }
+  </mat-tab-group>
+</div>
+<footer-content aria-label="Footer"/>

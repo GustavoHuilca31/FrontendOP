@@ -1,0 +1,40 @@
+
+<div class="popularity-container flex flex-col md:flex-row gap-5 mt-10">
+  <div class="popular-per-genre w-1/2">
+    <h3 class="title flex flex-col md:flex-row md:justify-between h-4rem">
+      <span class="font-bold flex md:self-center self-start "> Más popular por género</span>
+      <button class="border-0 w-auto" mat-button [matMenuTriggerFor]="menu">Género <fa-icon [icon]="faChevronDown" [style.font-size.px]="13"></fa-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let genre of genres" (click)="onGenreChange(genre.id)">
+          {{genre.name}}
+        </button>
+      </mat-menu>
+<!--      <pv-dropdown v-model="selectedGenre" :options="genres" placeholder="Select a genre" optionLabel="name" optionValue="id" @onChange="onGenreChange" class="border-0 pv-dropdown  w-14rem md:w-auto" />-->
+    </h3>
+    <div class="books flex flex-col gap-5">
+      <app-main-page-book-cards class="popular-carousel" *ngFor="let book of books; let i = index"
+                                [bookCover]="book._imgUrl"
+                                [position]="i + 1"
+                                [bookTitle]="book._title"
+                                [bookWriter]="book.bookWriter"
+                                [bookIllustrator]="book.bookIllustrator"/>
+    </div>
+  </div>
+
+
+
+  <div class="top-3-books">
+    <h3 class="title flex flex-col md:flex-row md:justify-between">
+      <span class="font-bold flex md:self-center">Top 3 de hoy</span>
+    </h3>
+    <div class="books flex flex-col gap-5">
+      <app-main-page-book-cards *ngFor="let book of topBooks; let i = index"
+                                [bookCover]="book._imgUrl"
+                                [position]="i + 1"
+                                [bookGenre]="book._genre"
+                                [bookTitle]="book._title"
+                                [bookWriter]="book.bookWriter"
+                                [bookIllustrator]="book.bookIllustrator"/>
+    </div>
+  </div>
+</div>

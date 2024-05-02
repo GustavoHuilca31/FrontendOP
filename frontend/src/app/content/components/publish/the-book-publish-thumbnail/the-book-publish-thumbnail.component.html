@@ -1,0 +1,7 @@
+<div class="max-w-32">
+  <div class="flex flex-col justify-center items-center bg-gray-200 p-5">
+    <input type="file" #fileInput accept="image/*" style="display: none" (change)="onFileSelected($event)">
+    <mat-icon class="edit-icon mb-2" (click)="onIconClick()">arrow_upward</mat-icon>
+    <p class="text-center">Elige una imagen para subir</p>
+  </div>
+</div>

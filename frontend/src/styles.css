@@ -8,3 +8,11 @@
   box-sizing: border-box;
   font-family: 'Archivo', sans-serif;
 }
+
+h3{
+  font-family: 'Archivo', sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0;}
+

@@ -1,0 +1,39 @@
+<div class="bg-white">
+  <mat-card class="bg-yellow-300 border-noround p-3 flex justify-center items-center">
+    <div class="sm:flex justify-content-evenly lg:gap-64">
+      <div class="mt-16 mx-16">
+        <h1 class="text-4xl font-bold">Esta es tu sala</h1>
+        <h1 class="text-4xl font-bold">de artistas</h1>
+      </div>
+      <div class="flex flex-col lg:flex-row">
+        <div>
+          <img [ngSrc]="artistData.getImgUrl" alt="Miriam" width="223" height="224"/>
+          <p class="text-xl font-bold"> {{artistData.getName}}</p>
+        </div>
+        <div>
+          <img [ngSrc]="writerData.getImgUrl" alt="Flor" width="223" height="224"/>
+          <p class="text-xl font-bold">{{writerData.getName}}</p>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+  <mat-card class="border-noround bd-gray mb-5 mt-20">
+    <div class="flex justify-content-end mx-10 gap-3">
+      <h2>Iniciar nuevo chat</h2>
+      <mat-icon class="mt-1 hover:cursor-pointer hover:scale-110" (click)="createChat()">add</mat-icon>
+    </div>
+  </mat-card>
+  <mat-card class="border-noround bd-gray mb-8 cursor-pointer" routerLink="/chat">
+    <div class="flex justify-content-start">
+      <img  [src]="artistData.getImgUrl" alt="Miriam" width="70" height="20"/>
+      <div class="mt-4 mx-3">
+        <p class="text-bold">Nuevo chat con {{artistData.getName.split(' ')[0]}}</p>
+        <p>Tu: Perfecto</p>
+      </div>
+    </div>
+    <div class="flex justify-content-end text-center">
+      <p>6:19pm</p>
+    </div>
+  </mat-card>
+  <button class="border-noround text-red-700 mx-4 p-1" (click)="deleteRoom()">Eliminar Sala</button>
+</div>

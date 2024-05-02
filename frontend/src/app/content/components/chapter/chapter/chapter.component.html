@@ -1,0 +1,133 @@
+<div class="bg-white">
+  <div class="bg-dark-blue">
+    <mat-toolbar class="flex border-noround text-white-alpha-90 bg-indigo-900 justify-content-between">
+      <div class="flex">
+        <img src="/frontend/src/assets/logo.png" alt="ArtCollab Logo" width="40" height="40" />
+        <h1>Boulevard</h1>
+        <button mat-icon-button>
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+        <h1 class="lg:text-4xl">Cap. 2</h1>
+      </div>
+      <span class="example-spacer"></span>
+      <div class="flex justify-center items-center">
+        <button mat-icon-button >
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+        <p class="lg:text-2xl">#2</p>
+        <button mat-icon-button >
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
+  </div>
+  <div class="flex justify-content-center">
+    <div class="flex-column flex justify-content-center">
+      <h2 class ="text-center lg:text-2xl text-black-alpha-90">Te quedan 2 capitulos mas de forma gratuita</h2>
+      <img class="responsive-image" src="/frontend/src/assets/images/comic-text.png" alt="ArtCollab Logo" width="800" height="1000" />
+      <img class="responsive-image" src="/frontend/src/assets/images/comic-photo.png" alt="ArtCollab Logo" width="800" height="1000" />
+    </div>
+  </div>
+  <div class="flex justify-content-center text-black-alpha-90 mt-4">
+    <div class="flex-column">
+      <p class="font-bold">¡Muestra tu apoyo a los autores de esta serie compartiendola!</p>
+      <div class="flex">
+        <button mat-raised-button class="p-button-rounded border-none text-black-alpha-90 bluebg mr-2">
+          <mat-icon>favorite</mat-icon> Me gusta
+        </button>
+        <button mat-raised-button class="p-button-rounded border-none text-black-alpha-90 bluebg mr-6">
+          <mat-icon>add</mat-icon> Seguir
+        </button>
+        <button mat-icon-button class="p-button-rounded border-none text-white colorblue mr-1">
+          <mat-icon>facebook</mat-icon>
+        </button>
+        <button mat-icon-button class="p-button-rounded border-none text-white colorblack mr-1">
+          <mat-icon>twitter</mat-icon>
+        </button>
+        <button mat-icon-button class="p-button-rounded border-none text-white bg-blue-400">
+          <mat-icon>content_copy</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="cont">
+    <div id="slider-cont">
+      <span (click)="!isFirstSlide && slideLeft()" class="btn"></span>
+      <div id="slider">
+        <div class="slide"><h1>Cap 2</h1></div>
+        <div class="slide"><h1>Cap 3</h1></div>
+        <div class="slide"><h1>Cap 4</h1></div>
+        <div class="slide"><h1>Cap 5</h1></div>
+        <div class="slide"><h1>Cap 6</h1></div>
+        <div class="slide"><h1>Cap 7</h1></div>
+        <div class="slide"><h1>Cap 8</h1></div>
+        <div class="slide"><h1>Cap 9</h1></div>
+        <div class="slide"><h1>Cap 10</h1></div>
+      </div>
+      <span (click)="!isLastSlide && slideLeft()" class="btn"></span>
+    </div>
+  </div>
+  <div class="flex justify-content-start text-black-alpha-90 mt-4">
+    <div>
+      <h1 class="text-lg">Autor</h1>
+      <p class="text-lg font-bold">Maria M. Salvador</p>
+    </div>
+    <div class="margin-left-16">
+      <h1 class="text-lg">Ilustrador</h1>
+      <p class="text-lg font-bold">MMIvens</p>
+    </div>
+  </div>
+  <div class="flex justify-content-start text-black-alpha-90 mt-4">
+    <p class="text-lg text-black-alpha-90 font-bold">Comentarios:</p>
+  </div>
+  <div>
+    <div class="comment-section">
+      <textarea matInput matTextareaAutosize matAutosizeMinRows="1" matAutosizeMaxRows="5" class="comment-input" placeholder="Inicia sesion para dejar un comentario..."></textarea>
+      <div class="send">
+        <button mat-icon-button class="p-button-rounded border-none text-white bg-blue-400">
+          <mat-icon>telegram</mat-icon>
+        </button>
+      </div>
+    </div>
+    <div>
+      <div class="comments-section">
+        <div class="flex justify-content-start">
+          <mat-tab-group class="full-width">
+            <mat-tab label="Principal">
+              <div class="comments">
+                <div v-for="(comment, index) in comments" :key="index">
+                  <div class="flex-column">
+                    <p class="text-black-alpha-90">Michi53</p>
+                    <p class="text-gray-400">01/04/2024</p>
+                    <div class=" flex ju">
+                      <div class="flex align">
+                        <button mat-button class="p-button border-none bg-gray-200 text-black-alpha-90 mr-3">TOP</button>
+                        <p class="text-black-alpha-90">Buen Capitulo <3</p>
+                      </div>
+                      <div class="flex align">
+                        <button mat-icon-button class="p-button-rounded border-none text-black-alpha-90 bg-transparent">
+                          <mat-icon>thumb_up</mat-icon>
+                        </button>
+                        <p class="text-black-alpha-90 text-lg">300</p>
+                        <button mat-icon-button class="p-button-rounded border-none text-black-alpha-90 bg-transparent">
+                          <mat-icon>thumb_down</mat-icon>
+                        </button>
+                        <h1 class="text-black-alpha-90 text-lg">0</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <hr/>
+                </div>
+              </div>
+            </mat-tab>
+            <mat-tab label="Reciente">
+              <p>No hay comentarios recientes.</p>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+        <hr/>
+      </div>
+    </div>
+  </div>
+</div>
+

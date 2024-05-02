@@ -1,0 +1,9 @@
+<div class="book-card flex flex-row gap-5 items-center">
+  <img [src]="bookCover" alt="Book cover" class="cursor-pointer" width="200px"/>
+  <h1 class="position text-2xl">{{ position }}</h1>
+  <div class="book-info flex flex-col md:content-center">
+    <p class="book-genre  cursor-pointer">{{ bookGenre }}</p>
+    <p class="book-title font-bold cursor-pointer">{{ bookTitle }}</p>
+    <p class="book-authors">{{ bookWriter }} / {{bookIllustrator}}</p>
+  </div>
+</div>

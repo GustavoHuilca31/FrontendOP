@@ -1,0 +1,36 @@
+<app-the-user-login-email (close)="closeLogin()" (back)="backToLogin()" [showEmailLogin]="showEmailLogin"/>
+<div *ngIf="showLogin" class="user-login w-full flex justify-center items-center fixed" (click)="closeLogin()" aria-label="Pantalla de inicio de sesión">
+  <mat-card (click)="$event.stopPropagation()" class="login-card h-24rem w-20rem flex justify-center items-center" aria-label="Tarjeta de inicio de sesión">
+    <mat-card-title>
+      <h3 class="text-center font-bold"> Inicia sesión ahora </h3>
+    </mat-card-title>
+    <mat-card-content>
+      <h5 class="text-center">
+        ¡Sumérgete en una aventura única de la mano de libros ilustrados!
+      </h5>
+      <div class ="mt-5 login-buttons flex flex-col gap-3">
+        <button mat-raised-button class="w-full bg-white" (click)="openEmailLogin()" aria-label="Continuar con Email">
+          <fa-icon [icon]="faEnvelope"></fa-icon>
+          Continuar con Email
+        </button>
+        <button mat-raised-button class="w-full bg-white" aria-label="Continuar con Facebook">
+          <fa-icon [icon]="faFacebook" ></fa-icon>
+          Continuar con Facebook
+        </button>
+        <button mat-raised-button class="w-full bg-white" aria-label="Continuar con Google">
+          <fa-icon [icon]="faGoogle" ></fa-icon>
+          Continuar con Google
+        </button>
+        <button mat-raised-button class="w-full bg-white" aria-label="Continuar con Twitter">
+          <fa-icon [icon]="faTwitter"></fa-icon>
+          Continuar con Twitter
+        </button>
+      </div>
+    </mat-card-content>
+    <mat-card-footer>
+      <div class="flex justify-center">
+        <h5 class="text-center">O <span class="register-link cursor-pointer text-yellow-900" aria-label="Link para registrarse" routerLink="/register">regístrate</span> si aún no tienes una cuenta</h5>
+      </div>
+    </mat-card-footer>
+  </mat-card>
+</div>

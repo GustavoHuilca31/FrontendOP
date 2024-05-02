@@ -1,5 +1,6 @@
 .navbar-tools img{
   cursor: pointer;
+  ;
 }
 .example-icon {
   display: none;
@@ -24,10 +25,13 @@ span{
   border: none;
   cursor: pointer;
 }
+button{
+  width: 110px;
+  font-size: 15px;
+}
 
 .search-input{
   display:flex;
-
 }
 
 .search-btn{
@@ -67,6 +71,12 @@ span{
 .mat-toolbar .toolbar-container {
   flex: 1;
 }
+.publish-btn{
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 
 .sidenav-list {
   display: flex;
@@ -84,9 +94,34 @@ span{
     display: none;
   }
 
+  .logged-container{
+    display: none;
+  }
+
   .toolbar-container{
     justify-content: space-around;
     padding: 0 0;
   }
 
 }
+
+@media (width>=1025px)  {
+  span{
+    font-size: 10px;
+  }
+  img{
+    width: 45px;
+  }
+  button{
+    font-size: 10px;
+    padding:0.3rem;
+    width: 110px;
+
+  }
+}
+@media(width<=350px){
+  .navbar-container{
+    width: 400px;
+  }
+}
+

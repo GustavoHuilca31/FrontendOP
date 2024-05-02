@@ -1,0 +1,59 @@
+.hero-container{
+    background-color: #012840;
+}
+
+h2{
+  font-size: 40px;
+}
+
+img {
+  width:170px;
+}
+@media (width>=412px) and (width<=914px){
+  h2{
+    font-size: 20px;
+  }
+  img{
+    width: 100px;
+  }
+}
+
+@media (width>=375px) and (width<=667px){
+  h2{
+    font-size: 20px;
+  }
+  img{
+    width: 100px;
+  }
+}
+
+@media (width>=344px) and (width<=667px){
+  h2{
+    font-size: 20px;
+  }
+  img{
+    width: 100px;
+  }
+}
+
+@media (width>=220px) and (width<=667px){
+  h2{
+    font-size: 15px;
+  }
+  img{
+    width: 90px;
+  }
+}
+
+@media (width<=350px){
+  h2{
+    font-size: 15px;
+  }
+  img{
+    width: 90px;
+  }
+  .hero-container{
+    width: 400px;
+  }
+}
+
